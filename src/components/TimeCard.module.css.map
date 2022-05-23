@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "TimeCard.module.scss"
+    ],
+    "names": [],
+    "file": "TimeCard.module.css"
+}
