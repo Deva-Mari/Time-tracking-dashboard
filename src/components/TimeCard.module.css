@@ -1,1 +1,52 @@
-/* No CSS *//*# sourceMappingURL=TimeCard.module.css.map */
+.time-card {
+  list-style-type: none;
+  margin: 1.5rem 0;
+}
+
+.time-card article {
+  border-radius: 15px;
+}
+
+.time-card article .img-container {
+  height: 2.5rem;
+  overflow: hidden;
+}
+
+.time-card article .img-container img {
+  position: relative;
+  top: -20%;
+  right: -70%;
+}
+
+.time-card article .content {
+  background-color: #1c1f4a;
+  border-radius: 15px;
+  padding: 2rem 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.time-card article .content .left {
+  color: white;
+  font-weight: 500;
+}
+
+.time-card article .content .left p:nth-of-type(2) {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-top: .5rem;
+}
+
+.time-card article .content .right {
+  text-align: right;
+  color: #bdc1ff;
+}
+
+.time-card article .content .right p {
+  margin-top: 1rem;
+}
+/*# sourceMappingURL=TimeCard.module.css.map */

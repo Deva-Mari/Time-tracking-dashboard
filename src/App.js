@@ -2,14 +2,21 @@ import React from "react";
 import MainCard from "./components/MainCard";
 import TimeCard from "./components/TimeCard";
 import Attribution from "./components/Attribution";
+import data from './data/data.json';
 
 function App() {
   return (
     <React.Fragment>
       <MainCard/>
       <ul>
-        {/* items.map((item) => */}
-        <TimeCard/>
+        {data.map((item) =>(
+          <TimeCard 
+          key={Math.random().toString()}
+          title={item.title}
+          timeframes={item.timeframes}
+          />
+        ))}
+        
       </ul>
       <Attribution/>
     </React.Fragment>
