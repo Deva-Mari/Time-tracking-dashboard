@@ -1,1 +1,5 @@
-/* No CSS *//*# sourceMappingURL=Card.module.css.map */
+.card {
+  width: 100%;
+  border-radius: 15px;
+}
+/*# sourceMappingURL=Card.module.css.map */
