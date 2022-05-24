@@ -28,6 +28,11 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  cursor: pointer;
+}
+
+.time-card article .content:hover {
+  background-color: #383971;
 }
 
 .time-card article .content .left {
@@ -38,15 +43,38 @@
 .time-card article .content .left p:nth-of-type(2) {
   font-size: 2rem;
   font-weight: 300;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .time-card article .content .right {
   text-align: right;
-  color: #bdc1ff;
+}
+
+.time-card article .content .right img:hover {
+  cursor: pointer;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
 }
 
 .time-card article .content .right p {
   margin-top: 1rem;
+}
+
+.time-card article .content .timeframes {
+  color: #bdc1ff;
+}
+
+@media (min-width: 376px) {
+  .time-card {
+    margin: 0;
+  }
+  .time-card article .content .left p:nth-of-type(2) {
+    font-size: 3rem;
+    margin-top: 2rem;
+  }
+  .time-card article .content .timeframes {
+    font-weight: 400;
+    margin-top: 1rem;
+  }
 }
 /*# sourceMappingURL=TimeCard.module.css.map */

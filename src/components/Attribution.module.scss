@@ -1,0 +1,11 @@
+@import "./variables.scss";
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: white;
+    margin-top: 5rem;
+    a{
+        color: $desaturatedBlue; 
+    }
+}

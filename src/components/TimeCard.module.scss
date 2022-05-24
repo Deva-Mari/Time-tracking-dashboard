@@ -1,39 +1,72 @@
 @import "./variables.scss";
-.time-card{
-    list-style-type: none;
-    margin: 1.5rem 0;
-    article{
-        border-radius: 15px;
-        .img-container{
-            height: 2.5rem;
-            overflow: hidden;
-            img{
-                position: relative;
-                top: -20%;
-                right: -70%;
-            }
-            
-        }
-        .content{
-            background-color: $darkBlue;
-            border-radius: 15px;
-            padding: 2rem 1.5rem;
-            display: flex;
-            justify-content: space-between;
-            .left{
-                color: white;
-                font-weight: 500;
-                p:nth-of-type(2){
-                    font-size: 2rem;
-                    font-weight: 300;
-                    margin-top: .5rem;
-                }
-            }
-            .right{
-                text-align: right;
-                color: $paleBlue;
-                p{margin-top: 1rem;}
-            }
-        }
+.time-card {
+  list-style-type: none;
+  margin: 1.5rem 0;
+  article {
+    border-radius: 15px;
+    .img-container {
+      height: 2.5rem;
+      overflow: hidden;
+      img {
+        position: relative;
+        top: -20%;
+        right: -70%;
+      }
     }
+    .content {
+      background-color: $darkBlue;
+      border-radius: 15px;
+      padding: 2rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+        &:hover{
+            background-color: hsl(238, 34%, 33%);
+        }
+      .left {
+        color: white;
+        font-weight: 500;
+        p:nth-of-type(2) {
+          font-size: 2rem;
+          font-weight: 300;
+          margin-top: 0.5rem;
+        }
+      }
+      .right {
+        text-align: right;
+        // color: $paleBlue;
+        img:hover {
+        //   color: white;
+          cursor: pointer;
+          filter: brightness(0) invert(1);
+        }
+        p {
+          margin-top: 1rem;
+        }
+      }
+      .timeframes {
+        color: $paleBlue;
+      }
+    }
+  }
+}
+
+@media (min-width: 376px) {
+  .time-card {
+    margin: 0;
+    article {
+      .content {
+        .left {
+          p:nth-of-type(2) {
+            font-size: 3rem;
+            margin-top: 2rem;
+          }
+        }
+        .timeframes {
+          font-weight: 400;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
 }

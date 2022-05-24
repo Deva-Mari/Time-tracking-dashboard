@@ -37,6 +37,7 @@
 .main-card header article h1 {
   font-weight: 300;
   font-size: 1.5rem;
+  color: white;
 }
 
 .main-card sub {
@@ -55,7 +56,43 @@
   color: #6f76c8;
 }
 
+.main-card sub p:hover {
+  cursor: pointer;
+  color: white;
+}
+
 .main-card sub .active {
   color: white;
+}
+
+@media (min-width: 376px) {
+  .main-card header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .main-card header img {
+    width: 5rem;
+  }
+  .main-card header article {
+    margin: 2rem 0;
+  }
+  .main-card header article h1 {
+    font-size: 2.5rem;
+  }
+  .main-card sub {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 1.2rem;
+  }
+  .main-card sub p {
+    margin: .5rem 0;
+  }
 }
 /*# sourceMappingURL=MainCard.module.css.map */

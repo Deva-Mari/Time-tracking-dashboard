@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,MAAM,EAAE,SAAS,EAAE,KAAK;EACtB,AAAA,WAAW,CAAC;IACR,OAAO,EAAE,IAAI;IACb,qBAAqB,EAAE,WAAW;IAClC,QAAQ,EAAE,IAAI;GACjB",
+    "sources": [
+        "TimeCards.module.scss"
+    ],
+    "names": [],
+    "file": "TimeCards.module.css"
+}

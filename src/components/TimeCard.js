@@ -4,6 +4,9 @@ import Card from "./UI/Card";
 import ellipsis from "../assets/icon-ellipsis.svg";
 
 const TimeCard = (props) => {
+  // get browser width to dynamically display timeframe position
+  const w = window.innerWidth;
+
   // importing background image conditionally
   const [bgImage, setBgImage] = useState("");
   let imgName = props.title.toLowerCase().replace(" ", "-");
@@ -43,16 +46,19 @@ const TimeCard = (props) => {
           <div className={styles["img-container"]}>
             <img src={bgImage} alt="" />
           </div>
-
-          {/* <div className={styles.background} style={{backgroundColor: bgColor}}></div> */}
           <div className={styles.content}>
             <div className={styles.left}>
               <p>{props.title}</p>
               <p>32hrs</p>
+              {w > 375 && (
+                <p className={styles.timeframes}>Last Week - 36hrs</p>
+              )}
             </div>
             <div className={styles.right}>
               <img src={ellipsis} alt="more" />
-              <p>Last Week - 36hrs</p>
+              {w <= 375 && (
+                <p className={styles.timeframes}>Last Week - 36hrs</p>
+              )}
             </div>
           </div>
         </article>

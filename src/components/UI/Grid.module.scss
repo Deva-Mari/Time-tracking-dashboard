@@ -1,0 +1,9 @@
+@media(min-width:376px) {
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        margin: 6rem;
+        grid-gap: 2rem;
+    }
+}
+

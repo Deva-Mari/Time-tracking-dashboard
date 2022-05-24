@@ -1,1 +1,11 @@
-/* No CSS *//*# sourceMappingURL=Attribution.module.css.map */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+  margin-top: 5rem;
+}
+
+.attribution a {
+  color: #6f76c8;
+}
+/*# sourceMappingURL=Attribution.module.css.map */
