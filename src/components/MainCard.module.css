@@ -74,6 +74,7 @@
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    height: 65%;
   }
   .main-card header img {
     width: 5rem;
@@ -82,7 +83,7 @@
     margin: 2rem 0;
   }
   .main-card header article h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
   .main-card sub {
     -webkit-box-orient: vertical;
