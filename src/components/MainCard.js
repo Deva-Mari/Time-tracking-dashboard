@@ -4,43 +4,19 @@ import Card from "./UI/Card";
 import jeremyImage from "../assets/image-jeremy.png";
 
 const MainCard = (props) => {
-
   //display "active" state of timeframe dynamically
-  const [dailyIsActive, setDailyIsActive] = useState(true);
-  const [weeklyIsActive, setWeeklyIsActive] = useState(false);
-  const [monthlyIsActive, setMonthlyIsActive] = useState(false);
+  const [selectedTimeframe, setSelectedTimeframe] = useState("Daily");
 
-  const timeFrames = [
-    { id: 1, type: "Daily", active: dailyIsActive },
-    { id: 2, type: "Weekly", active: weeklyIsActive },
-    { id: 3, type: "Monthly", active: monthlyIsActive },
+  const availableTimeframes = [
+    { id: 1, type: "Daily" },
+    { id: 2, type: "Weekly" },
+    { id: 3, type: "Monthly" },
   ];
 
   const clickHandler = (event) => {
+    setSelectedTimeframe(event.target.innerText); //mark as selected to set className
     const clickedTimeframe = event.target.innerText.toLowerCase();
-    switch (clickedTimeframe) {
-      case "daily":
-        setDailyIsActive(true);
-        setWeeklyIsActive(false);
-        setMonthlyIsActive(false);
-        break;
-      case "weekly":
-        setWeeklyIsActive(true);
-        setDailyIsActive(false);
-        setMonthlyIsActive(false);
-        break;
-      case "monthly":
-        setMonthlyIsActive(true);
-        setDailyIsActive(false);
-        setWeeklyIsActive(false);
-        break;
-      default:
-        setDailyIsActive(true);
-        setWeeklyIsActive(false);
-        setMonthlyIsActive(false);
-        break;
-    }
-    props.onChangeTimeframe(clickedTimeframe);
+    props.onChangeTimeframe(clickedTimeframe); //transmit clickedTimeframe to App.js to be used by Timecards.js
   };
 
   return (
@@ -53,13 +29,13 @@ const MainCard = (props) => {
         </article>
       </header>
       <sub>
-        {timeFrames.map((timeFrame) => (
+        {availableTimeframes.map((timeframe) => (
           <p
             onClick={clickHandler.bind(this)}
-            key={timeFrame.id}
-            className={timeFrame.active ? `${styles.active}` : ""}
+            key={timeframe.id}
+            className={timeframe.type === selectedTimeframe ? `${styles.active}` : ""}
           >
-            {timeFrame.type}
+            {timeframe.type}
           </p>
         ))}
       </sub>
