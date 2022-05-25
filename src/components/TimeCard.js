@@ -4,6 +4,33 @@ import Card from "./UI/Card";
 import ellipsis from "../assets/icon-ellipsis.svg";
 
 const TimeCard = (props) => {
+  // showing data for selected timeframe (day/week/month)
+  let current;
+  let previous;
+  let prevText;
+  switch (props.selectedTimeframe) {
+    case "daily":
+      current = props.timeframes.daily.current;
+      previous = props.timeframes.daily.previous;
+      prevText = "Yesterday";
+      break;
+    case "weekly":
+      current = props.timeframes.weekly.current;
+      previous = props.timeframes.weekly.previous;
+      prevText = "Last Week";
+      break;
+    case "monthly":
+      current = props.timeframes.monthly.current;
+      previous = props.timeframes.monthly.previous;
+      prevText = "Last Month";
+      break;
+    default:
+      current = props.timeframes.daily.current;
+      previous = props.timeframes.daily.previous;
+      prevText = "Yesterday";
+      break;
+  }
+
   // get browser width to dynamically display timeframe position
   const w = window.innerWidth;
 
@@ -49,15 +76,19 @@ const TimeCard = (props) => {
           <div className={styles.content}>
             <div className={styles.left}>
               <p>{props.title}</p>
-              <p>32hrs</p>
+              <p>{current}hrs</p>
               {w > 375 && (
-                <p className={styles.timeframes}>Last Week - 36hrs</p>
+                <p className={styles.timeframes}>
+                  {prevText} - {previous}hrs
+                </p>
               )}
             </div>
             <div className={styles.right}>
               <img src={ellipsis} alt="more" />
               {w <= 375 && (
-                <p className={styles.timeframes}>Last Week - 36hrs</p>
+                <p className={styles.timeframes}>
+                  {prevText} - {previous}hrs
+                </p>
               )}
             </div>
           </div>

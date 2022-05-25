@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import styles from "./MainCard.module.css";
 import Card from "./UI/Card";
 import jeremyImage from "../assets/image-jeremy.png";
 
-const MainCard = () => {
+const MainCard = (props) => {
+
   //display "active" state of timeframe dynamically
   const [dailyIsActive, setDailyIsActive] = useState(true);
   const [weeklyIsActive, setWeeklyIsActive] = useState(false);
@@ -16,18 +17,19 @@ const MainCard = () => {
   ];
 
   const clickHandler = (event) => {
-    switch (event.target.innerText) {
-      case "Daily":
+    const clickedTimeframe = event.target.innerText.toLowerCase();
+    switch (clickedTimeframe) {
+      case "daily":
         setDailyIsActive(true);
         setWeeklyIsActive(false);
         setMonthlyIsActive(false);
         break;
-      case "Weekly":
+      case "weekly":
         setWeeklyIsActive(true);
         setDailyIsActive(false);
         setMonthlyIsActive(false);
         break;
-      case "Monthly":
+      case "monthly":
         setMonthlyIsActive(true);
         setDailyIsActive(false);
         setWeeklyIsActive(false);
@@ -38,8 +40,7 @@ const MainCard = () => {
         setMonthlyIsActive(false);
         break;
     }
-
-    //transmit active timeframe to App.js, then TimeCard
+    props.onChangeTimeframe(clickedTimeframe);
   };
 
   return (
