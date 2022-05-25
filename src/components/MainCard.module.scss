@@ -27,7 +27,7 @@
             }
         }
     }
-    sub{
+    nav{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -61,7 +61,7 @@
                 }
             }
         }
-        sub{
+        nav{
             flex-direction: column;
             font-size: 1.2rem;
             p{

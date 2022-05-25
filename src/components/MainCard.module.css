@@ -40,7 +40,7 @@
   color: white;
 }
 
-.main-card sub {
+.main-card nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,12 +56,12 @@
   color: #6f76c8;
 }
 
-.main-card sub p:hover {
+.main-card nav p:hover {
   cursor: pointer;
   color: white;
 }
 
-.main-card sub .active {
+.main-card nav .active {
   color: white;
 }
 
@@ -85,14 +85,14 @@
   .main-card header article h1 {
     font-size: 2.2rem;
   }
-  .main-card sub {
+  .main-card nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     font-size: 1.2rem;
   }
-  .main-card sub p {
+  .main-card nav p {
     margin: .5rem 0;
   }
 }

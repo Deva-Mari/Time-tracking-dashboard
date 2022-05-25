@@ -28,7 +28,7 @@ const MainCard = (props) => {
           <h1>Jeremy Robson</h1>
         </article>
       </header>
-      <sub>
+      <nav>
         {availableTimeframes.map((timeframe) => (
           <p
             onClick={clickHandler.bind(this)}
@@ -38,7 +38,7 @@ const MainCard = (props) => {
             {timeframe.type}
           </p>
         ))}
-      </sub>
+      </nav>
     </Card>
   );
 };

@@ -75,7 +75,7 @@ const TimeCard = (props) => {
           </div>
           <div className={styles.content}>
             <div className={styles.left}>
-              <p>{props.title}</p>
+              <h2>{props.title}</h2>
               <p>{current}hrs</p>
               {w > 375 && (
                 <p className={styles.timeframes}>

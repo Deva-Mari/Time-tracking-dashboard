@@ -1,7 +1,7 @@
 import styles from "./Grid.module.css";
 
 const Grid = (props) =>{
-    return (<div className = {`${styles.grid} ${props.className ? props.className : ''}`}>{props.children}</div>);
+    return (<main role="main" className = {`${styles.grid} ${props.className ? props.className : ''}`}>{props.children}</main>);
 }
 
 export default Grid;
