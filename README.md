@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Repository URL: (https://github.com/Deva-Mari/Time-tracking-dashboard)
-- Live Site URL: ([https://your-live-site-url.com](https://fabulous-lily-b32be7.netlify.app/))
+- Live Site URL: (https://fabulous-lily-b32be7.netlify.app/)
 
 ## My process
 
