@@ -1,0 +1,2 @@
+(this["webpackJsonpreact-complete-guide"]=this["webpackJsonpreact-complete-guide"]||[]).push([[6],{28:function(e,c,t){"use strict";t.r(c),c.default=t.p+"static/media/icon-social.64be0c18.svg"}}]);
+//# sourceMappingURL=6.0208190c.chunk.js.map

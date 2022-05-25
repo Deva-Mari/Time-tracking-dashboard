@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 import styles from "./MainCard.module.css";
 import Card from "./UI/Card";
 import jeremyImage from "../assets/image-jeremy.png";

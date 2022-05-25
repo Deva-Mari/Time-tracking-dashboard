@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.55595780.chunk.css",
+    "main.js": "/static/js/main.6572055d.chunk.js",
+    "main.js.map": "/static/js/main.6572055d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5a1c5823.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5a1c5823.js.map",
+    "static/js/2.b1a486a4.chunk.js": "/static/js/2.b1a486a4.chunk.js",
+    "static/js/2.b1a486a4.chunk.js.map": "/static/js/2.b1a486a4.chunk.js.map",
+    "static/js/3.8de23e1c.chunk.js": "/static/js/3.8de23e1c.chunk.js",
+    "static/js/3.8de23e1c.chunk.js.map": "/static/js/3.8de23e1c.chunk.js.map",
+    "static/js/4.8c70f96e.chunk.js": "/static/js/4.8c70f96e.chunk.js",
+    "static/js/4.8c70f96e.chunk.js.map": "/static/js/4.8c70f96e.chunk.js.map",
+    "static/js/5.8226eed4.chunk.js": "/static/js/5.8226eed4.chunk.js",
+    "static/js/5.8226eed4.chunk.js.map": "/static/js/5.8226eed4.chunk.js.map",
+    "static/js/6.0208190c.chunk.js": "/static/js/6.0208190c.chunk.js",
+    "static/js/6.0208190c.chunk.js.map": "/static/js/6.0208190c.chunk.js.map",
+    "static/js/7.dfe6c88b.chunk.js": "/static/js/7.dfe6c88b.chunk.js",
+    "static/js/7.dfe6c88b.chunk.js.map": "/static/js/7.dfe6c88b.chunk.js.map",
+    "static/js/8.25e58273.chunk.js": "/static/js/8.25e58273.chunk.js",
+    "static/js/8.25e58273.chunk.js.map": "/static/js/8.25e58273.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.55595780.chunk.css.map": "/static/css/main.55595780.chunk.css.map",
+    "static/js/2.b1a486a4.chunk.js.LICENSE.txt": "/static/js/2.b1a486a4.chunk.js.LICENSE.txt",
+    "static/media/icon-ellipsis.svg": "/static/media/icon-ellipsis.a57a4ac8.svg",
+    "static/media/icon-exercise.svg": "/static/media/icon-exercise.3e7b0282.svg",
+    "static/media/icon-play.svg": "/static/media/icon-play.e8d4e569.svg",
+    "static/media/icon-self-care.svg": "/static/media/icon-self-care.a161aff5.svg",
+    "static/media/icon-social.svg": "/static/media/icon-social.64be0c18.svg",
+    "static/media/icon-study.svg": "/static/media/icon-study.1f0a65e4.svg",
+    "static/media/icon-work.svg": "/static/media/icon-work.a3f124e5.svg",
+    "static/media/image-jeremy.71cd41f1.png": "/static/media/image-jeremy.71cd41f1.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5a1c5823.js",
+    "static/js/2.b1a486a4.chunk.js",
+    "static/css/main.55595780.chunk.css",
+    "static/js/main.6572055d.chunk.js"
+  ]
+}
